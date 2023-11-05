@@ -1,15 +1,24 @@
 <script>
+import img from '../assets/jeegSD.jpg';
+
 export default {
   data() {
     return {
-      message: 'Jumbotron?',
+      message: 'Jumbotron',
+      img,
     };
   },
 };
 </script>
 
 <template>
-  <div>{{ message }}</div>
+  <h1>{{ message }}</h1>
+  <img src="/jeegSD.jpg" alt="" />
+  <img :src="img" alt="" />
 </template>
 
-<style scoped></style>
+<style scoped>
+img {
+  width: 100%;
+}
+</style>
